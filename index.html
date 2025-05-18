@@ -197,7 +197,8 @@
 								<p style="font-size: 30px; margin-top: 20px;">Trân Trọng Kính Mời</p>
 								<p style="font-family: 'Dancing Script', Arial, serif; color: #730505; font-size: 60px;"
 									id="show-name"></p>
-								<p style="color: #9d7f07; text-align: left !important; font-size: 20px; font-family: 'Noto Sans', sans-serif;">
+								<p
+									style="color: #9d7f07; text-align: left !important; font-size: 20px; font-family: 'Noto Sans', sans-serif;">
 									Lời nói đầu tiên, xin được cảm ơn quý anh/chị, thầy/cô, bạn bè đã đọc những dòng thư
 									này.
 									Em xin phép được xưng "em" với mọi người vì sự thân thiết và gần gũi trong suốt quá
@@ -225,7 +226,8 @@
 									Nhìn lại quãng đường đã qua, em cảm thấy biết ơn vì đã có quyết định đúng đắn ấy.
 
 									<br>
-									Lễ tốt nghiệp sẽ diễn ra vào <strong>sáng ngày 31-05-2025</strong> tại<strong> trường Đại học Tôn Đức Thắng.</strong>
+									Lễ tốt nghiệp sẽ diễn ra vào <strong>sáng ngày 31-05-2025</strong> tại<strong>
+										trường Đại học Tôn Đức Thắng.</strong>
 									Đây thực sự là một cột mốc đặc biệt trong cuộc đời mình, và niềm vui ấy sẽ trọn vẹn
 									hơn rất nhiều nếu có sự hiện diện của bạn.
 									Hy vọng bạn sẽ sắp xếp được thời gian đến, chúng ta có thể cùng nhau chụp thật nhiều
@@ -239,12 +241,12 @@
 								</p>
 
 								<img src="/images/anhthu/avatar.jpg" width="50" height="50" style="border-radius: 50%;">
-								
+
 								<br>
 								<h1 style="font-family: 'Dancing Script', Arial, serif;">Nguyễn Thị Anh Thư</h1>
-						
+
 							</div>
-					
+
 							<div id="image-upload" style="font-family: 'Noto Sans', sans-serif;">
 								<!-- <h2>Bộ sưu tập hình ảnh</h2> -->
 								<p>
@@ -265,7 +267,7 @@
 									<img src="/images/anhthu/graduation.png" alt="Ảnh mặc định 3"
 										style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 								</div>
-								  
+
 
 								<!-- Nút upload ảnh -->
 								<div class="upload-box" onclick="document.getElementById('upload-input').click()"
@@ -278,9 +280,9 @@
 
 								<!-- Link xem thêm ảnh -->
 								<div style="margin-top: 10px;">
-									<a href="https://drive.google.com/drive/folders/1J2hj25yT0mbwulLmsorGFLlnGK0E87BM?usp=sharing" target="_blank"
-									style="text-decoration: none; font-size: 16px; color: #007bff;">
-									📁 Xem thêm ảnh khác
+									<a href="https://drive.google.com/drive/folders/1J2hj25yT0mbwulLmsorGFLlnGK0E87BM?usp=sharing"
+										target="_blank" style="text-decoration: none; font-size: 16px; color: #007bff;">
+										📁 Xem thêm ảnh khác
 									</a>
 								</div>
 							</div>
@@ -351,15 +353,45 @@
 				sound: { enable: false },
 			});
 
+
+
 			// Gán sự kiện cho nút
 			document.getElementById("open-invitation").addEventListener("click", () => {
+				function createFallingIcon() {
+					const emojis = ['🎓', '🌸', '💖', '✨', '🎉', '🎊'];
+					const icon = document.createElement("span");
+
+					icon.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+					icon.className = "falling-icon";
+
+					// Random vị trí ngang
+					icon.style.left = Math.random() * window.innerWidth + "px";
+
+					// Random kích thước chữ
+					const size = Math.random() * 20 + 20;
+					icon.style.fontSize = size + "px";
+
+					document.body.appendChild(icon);
+
+					// Xoá sau khi rơi xong
+					setTimeout(() => {
+						icon.remove();
+					}, 4000);
+				}
+
+
 				fireworks.start();
 				playAudio1();
+				createFallingIcon();
 
 				// Tự động dừng pháo sau 5 giây
-				// setTimeout(() => {
-				// 	fireworks.stop();
-				// }, 5000);
+				setTimeout(() => {
+					fireworks.stop();
+					setInterval(createFallingIcon, 500);
+				}, 5000);
+
+
+
 			});
 		});
 	</script>
@@ -397,6 +429,12 @@
 			input.value = ''; // reset để cho phép chọn lại ảnh cũ
 		});
 	</script>
+
+	<script>
+
+
+	</script>
+
 
 
 
