@@ -197,7 +197,7 @@
 								<p style="font-size: 30px; margin-top: 20px;">Trân Trọng Kính Mời</p>
 								<p style="font-family: 'Dancing Script', Arial, serif; color: #730505; font-size: 60px;"
 									id="show-name"></p>
-								<p style="color: #9d7f07; text-align: left !important; font-size: 20px;">
+								<p style="color: #9d7f07; text-align: left !important; font-size: 20px; font-family: 'Noto Sans', sans-serif;">
 									Lời nói đầu tiên, xin được cảm ơn quý anh/chị, thầy/cô, bạn bè đã đọc những dòng thư
 									này.
 									Em xin phép được xưng "em" với mọi người vì sự thân thiết và gần gũi trong suốt quá
@@ -225,7 +225,7 @@
 									Nhìn lại quãng đường đã qua, em cảm thấy biết ơn vì đã có quyết định đúng đắn ấy.
 
 									<br>
-									Lễ tốt nghiệp sẽ diễn ra vào sáng ngày 31-05-2025 tại trường Đại học Tôn Đức Thắng.
+									Lễ tốt nghiệp sẽ diễn ra vào <strong>sáng ngày 31-05-2025</strong> tại<strong> trường Đại học Tôn Đức Thắng.</strong>
 									Đây thực sự là một cột mốc đặc biệt trong cuộc đời mình, và niềm vui ấy sẽ trọn vẹn
 									hơn rất nhiều nếu có sự hiện diện của bạn.
 									Hy vọng bạn sẽ sắp xếp được thời gian đến, chúng ta có thể cùng nhau chụp thật nhiều
@@ -245,7 +245,7 @@
 						
 							</div>
 					
-							<div id="image-upload">
+							<div id="image-upload" style="font-family: 'Noto Sans', sans-serif;">
 								<!-- <h2>Bộ sưu tập hình ảnh</h2> -->
 								<p>
 									<small> <a href="https://www.facebook.com/nguyenthianhthu09" target="_blank">
@@ -278,9 +278,6 @@
 
 								<!-- Link xem thêm ảnh -->
 								<div style="margin-top: 10px;">
-									<a href="https://drive.google.com/drive/folders/1CDTAzH6DOFtJ2eWLyz9UWOOkSH1cIuu3?usp=drive_link"
-										target="_blank" style="text-decoration: none; font-size: 16px; color: #007bff;">
-										📁 Xem thêm ảnh khác
 									<a href="https://drive.google.com/drive/folders/1J2hj25yT0mbwulLmsorGFLlnGK0E87BM?usp=sharing" target="_blank"
 									style="text-decoration: none; font-size: 16px; color: #007bff;">
 									📁 Xem thêm ảnh khác
@@ -321,10 +318,10 @@
 
 	<script>
 		// Khởi tạo lightGallery
-		lightGallery(document.getElementById("gallery"), {
-			plugins: [lgThumbnail, lgAutoplay, lgFullscreen],
-			speed: 500,
-		});
+		// lightGallery(document.getElementById("gallery"), {
+		// 	plugins: [lgThumbnail, lgAutoplay, lgFullscreen],
+		// 	speed: 500,
+		// });
 
 		// Hàm phát âm thanh
 		function playAudio1() {
@@ -360,9 +357,9 @@
 				playAudio1();
 
 				// Tự động dừng pháo sau 5 giây
-				setTimeout(() => {
-					fireworks.stop();
-				}, 5000);
+				// setTimeout(() => {
+				// 	fireworks.stop();
+				// }, 5000);
 			});
 		});
 	</script>
