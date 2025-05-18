@@ -492,7 +492,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #overlay {
   background: #ffffff;
-  background-image: url("/images/anhthu/anh-nen.jpg");
+  background-image: url("../images/anhthu/anhnen.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -1527,7 +1527,7 @@ form label {
   color: #fff;
 }
 #fh5co-started .form-control:focus {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(69, 180, 44, 0.3);
 }
 #fh5co-started .btn {
   height: 54px;
@@ -1984,7 +1984,7 @@ form label {
   padding-bottom: 2em !important;
 }
 
-.fh5co-loader {
+/* .fh5co-loader {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -1992,7 +1992,7 @@ form label {
   height: 100%;
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
-}
+} */
 
 .js .animate-box {
   opacity: 0;
@@ -2330,7 +2330,7 @@ fadeIn {  from {
   width: 100%;
   height: 100%;
   opacity: 0.15;
-  background-image: url('../images/background/blue-brush-1.jpg');
+  background-image: url('images/anhthu/anhnen.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -2350,4 +2350,23 @@ fadeIn {  from {
   font-style: normal;
   
 }
-/*# sourceMappingURL=style.css.map */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
