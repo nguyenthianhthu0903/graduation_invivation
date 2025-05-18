@@ -42,7 +42,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dynalight&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@100..1000&family=Dynalight&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@100..1000&family=Dynalight&display=swap"
+		rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -58,11 +59,20 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
 	<!--<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.2/css/lightgallery-bundle.min.css" />-->
-	<link type="text/css" rel="stylesheet" href="lib/lightgallery.js/dist/css/lightgallery-bundle.min.css" />
-	<link type="text/css" rel="stylesheet" href="lib/lightgallery.js/dist/css/lg-thumbnail.css" />
-	<link type="text/css" rel="stylesheet" href="lib/lightgallery.js/dist/css/lg-autoplay.css" />
-	<link type="text/css" rel="stylesheet" href="lib/lightgallery.js/dist/css/lg-fullscreen.css" />
+	<!-- lightGallery core -->
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+
 	<link type="text/css" rel="stylesheet" href="lib/lightgallery.js/dist/css/lg-transitions.css" />
 
 	<!-- Theme style  -->
@@ -123,11 +133,13 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 </head>
 
+
+
 <body>
-	
+
 
 
 	<div class="fh5co-loader"></div>
@@ -144,15 +156,17 @@
 						</div>
 					</div>
 					<div class="row">
-						<div id="hd" style="font-family: 'Roboto Condensed', cursive; color: #730505; " class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							<h1
-								style="font-family: 'Oswald', cursive; color:rgb(236, 183, 49); font-size: 60px;">
+						<div id="hd"
+							style="font-family: 'Noto Sans', sans-serif; color: #730505;  animation-duration: 3s;"
+							class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+							<h1 style="font-family: 'Oswald', cursive; color:rgb(236, 183, 49); font-size: 60px;">
 								Thư mời tham dự lễ tốt nghiệp</h1>
 							<p style="margin-bottom: 0; font-size: 25px;">Thời gian: Buổi sáng ngày 31/05/2025 (T7)
 							</p>
 							<p style="margin-bottom: 0; font-size: 25px;">Địa điểm: Trường Đại học Tôn Đức
 								Thắng - Số 19, đường Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, Thành phố Hồ Chí Minh</p>
-							<button class="btn btn-primary" style="margin-top: 5px;" id="open-invitation">Xem
+							<button class="btn btn-primary" style="margin-top: 5px; font-size: large;"
+								id="open-invitation">Xem
 								Thêm</button>
 						</div>
 					</div>
@@ -171,47 +185,60 @@
 				src="/images/anhthu/fireworks.png">
 			<div class="container">
 				<div class="row animate-box">
-					<div style="font-family: 'Dancing Script', Arial, serif; color: #730505;" class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<div style="font-family: 'Dancing Script', Arial, serif; color: #730505;"
+						class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 						<h2 style="color:#d31f1f"> Thư mời dự lễ tốt nghiệp </h2>
 						<div class="row copyright animate-box">
 							<div class="col-md-12 text-center">
 								<div class="row">
-										<img src="/images/anhthu/graduation.png" alt="" class="couple-main" height="200" style="width: auto">
+									<img src="/images/anhthu/graduation.png" alt="" class="couple-main" height="200"
+										style="width: auto">
 								</div>
 								<p style="font-size: 30px; margin-top: 20px;">Trân Trọng Kính Mời</p>
-								<p style="font-family: 'Dancing Script', Arial, serif; color: #730505; font-size: 60px;" id="show-name"></p>
+								<p style="font-family: 'Dancing Script', Arial, serif; color: #730505; font-size: 60px;"
+									id="show-name"></p>
 								<p style="color: #9d7f07; text-align: left !important; font-size: 20px;">
-									Lời nói đầu tiên, xin được cảm ơn quý anh/chị, thầy/cô, bạn bè đã đọc những dòng thư này. 
-									Em xin phép được xưng "em" với mọi người vì sự thân thiết và gần gũi trong suốt quá trình học tập và trưởng thành. 
-								
+									Lời nói đầu tiên, xin được cảm ơn quý anh/chị, thầy/cô, bạn bè đã đọc những dòng thư
+									này.
+									Em xin phép được xưng "em" với mọi người vì sự thân thiết và gần gũi trong suốt quá
+									trình học tập và trưởng thành.
+
 									<br>
-									Cuối cùng, mình cũng làm lễ tốt nghiệp rồi! Nhiều bạn hỏi tại sao tốt nghiệp từ năm trước mà năm nay mới làm lễ. 
-									Thật ra mình đã định không tổ chức, nhưng nhiều người nói rằng dù gì cũng học mấy năm, làm một buổi lễ tốt nghiệp cũng không mất nhiều thời gian. 
-									Vậy là mình đã quyết định thực hiện lễ tốt nghiệp như một dấu ấn đáng nhớ trong cuộc đời.
-								
+									Cuối cùng, mình cũng làm lễ tốt nghiệp rồi! Nhiều bạn hỏi tại sao tốt nghiệp từ năm
+									trước mà năm nay mới làm lễ.
+									Thật ra mình đã định không tổ chức, nhưng nhiều người nói rằng dù gì cũng học mấy
+									năm, làm một buổi lễ tốt nghiệp cũng không mất nhiều thời gian.
+									Vậy là mình đã quyết định thực hiện lễ tốt nghiệp như một dấu ấn đáng nhớ trong cuộc
+									đời.
+
 									<br>
-									Trong những năm học vừa qua, mình đã có cơ hội gặp gỡ và làm việc với rất nhiều người giỏi, trong đó có bạn - người đang đọc những dòng này. 
-									Cũng có rất nhiều khó khăn và thử thách, nhưng mình đã học được cách đối mặt và giải quyết chúng, từng bước hoàn thiện bản thân hơn. 
-								
+									Trong những năm học vừa qua, mình đã có cơ hội gặp gỡ và làm việc với rất nhiều
+									người giỏi, trong đó có bạn - người đang đọc những dòng này.
+									Cũng có rất nhiều khó khăn và thử thách, nhưng mình đã học được cách đối mặt và giải
+									quyết chúng, từng bước hoàn thiện bản thân hơn.
+
 									<br>
-									Em đã có một năm gap year không học tại trường, vì khi đó còn nhiều băn khoăn về con đường phía trước và cả việc lựa chọn trường học. 
-									Cuối cùng, sau nhiều suy nghĩ, em đã quay về Đại học Tôn Đức Thắng để tiếp tục hành trình học tập của mình. 
-									Nhìn lại quãng đường đã qua, em cảm thấy biết ơn vì đã có quyết định đúng đắn ấy. 
-								
+									Em đã có một năm gap year không học tại trường, vì khi đó còn nhiều băn khoăn về con
+									đường phía trước và cả việc lựa chọn trường học.
+									Cuối cùng, sau nhiều suy nghĩ, em đã quay về Đại học Tôn Đức Thắng để tiếp tục hành
+									trình học tập của mình.
+									Nhìn lại quãng đường đã qua, em cảm thấy biết ơn vì đã có quyết định đúng đắn ấy.
+
 									<br>
-									Lễ tốt nghiệp sẽ diễn ra vào sáng ngày 31-05-2025 tại trường Đại học Tôn Đức Thắng. 
-									Đây thực sự là một cột mốc đặc biệt trong cuộc đời mình, và niềm vui ấy sẽ trọn vẹn hơn rất nhiều nếu có sự hiện diện của bạn. 
-									Hy vọng bạn sẽ sắp xếp được thời gian đến, chúng ta có thể cùng nhau chụp thật nhiều ảnh, sẻ chia niềm vui và lưu giữ những kỷ niệm đáng nhớ của ngày này. 
-								
+									Lễ tốt nghiệp sẽ diễn ra vào sáng ngày 31-05-2025 tại trường Đại học Tôn Đức Thắng.
+									Đây thực sự là một cột mốc đặc biệt trong cuộc đời mình, và niềm vui ấy sẽ trọn vẹn
+									hơn rất nhiều nếu có sự hiện diện của bạn.
+									Hy vọng bạn sẽ sắp xếp được thời gian đến, chúng ta có thể cùng nhau chụp thật nhiều
+									ảnh, sẻ chia niềm vui và lưu giữ những kỷ niệm đáng nhớ của ngày này.
+
 									<br>
-									Rất mong được gặp bạn vào hôm ấy! 
+									Rất mong được gặp bạn vào hôm ấy!
 									<br>
 									Thân mến,
 									<br>
 								</p>
-								
-								<img src="/images/anhthu/avatar.jpg" width="50"
-									height="50" style="border-radius: 50%;">
+
+								<img src="/images/anhthu/avatar.jpg" width="50" height="50" style="border-radius: 50%;">
 								<br>
 								<h1 style="font-family: 'Dancing Script', Arial, serif;">Nguyễn Thị Anh Thư</h1>
 								<!-- <p>
@@ -239,23 +266,25 @@
 								<!-- <h2>Bộ sưu tập hình ảnh</h2> -->
 								<p>
 									<small> <a href="https://www.facebook.com/nguyenthianhthu09" target="_blank">
-										Facebook: Nguyễn Thị Ah Thư
-									</a>| Gmail :
-										thupvt10a2@gmail.com | 
-										<a href ="tel:84386563187">Phone : (+84) 386563187</a> </small>
+											Facebook: Nguyễn Thị Ah Thư
+										</a>| Gmail :
+										thupvt10a2@gmail.com |
+										<a href="tel:84386563187">Phone : (+84) 386563187</a> </small>
 								</p>
 
 								<!-- Thư viện ảnh hiển thị tối đa 3 ảnh -->
 								<div class="image-gallery" id="gallery"
 									style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
-									<img src="/images/anhthu/anh-nen.jpg" alt="Ảnh mặc định 1" style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-									<img src="/images/anhthu/avatar.jpg" alt="Ảnh mặc định 2" style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-									<img src="/images/anhthu/graduation.png" alt="Ảnh mặc định 3" style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="/images/anhthu/anh-nen.jpg" alt="Ảnh mặc định 1"
+										style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="/images/anhthu/avatar.jpg" alt="Ảnh mặc định 2"
+										style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+									<img src="/images/anhthu/graduation.png" alt="Ảnh mặc định 3"
+										style="width: 200px; height: 150px; object-fit: cover; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
 								</div>
 
 								<!-- Nút upload ảnh -->
-								<div class="upload-box"
-									onclick="document.getElementById('upload-input').click()"
+								<div class="upload-box" onclick="document.getElementById('upload-input').click()"
 									style="display: inline-block; padding: 15px 25px; background: #fff; border: 2px dashed #999; border-radius: 10px; cursor: pointer; font-size: 18px; color: #333; margin-bottom: 10px;">
 									Upload ảnh
 								</div>
@@ -265,9 +294,9 @@
 
 								<!-- Link xem thêm ảnh -->
 								<div style="margin-top: 10px;">
-									<a href="https://drive.google.com/drive/folders/1CDTAzH6DOFtJ2eWLyz9UWOOkSH1cIuu3?usp=drive_link" target="_blank"
-									style="text-decoration: none; font-size: 16px; color: #007bff;">
-									📁 Xem thêm ảnh khác
+									<a href="https://drive.google.com/drive/folders/1CDTAzH6DOFtJ2eWLyz9UWOOkSH1cIuu3?usp=drive_link"
+										target="_blank" style="text-decoration: none; font-size: 16px; color: #007bff;">
+										📁 Xem thêm ảnh khác
 									</a>
 								</div>
 							</div>
@@ -288,32 +317,96 @@
 </div>-->
 
 
+	<!-- Fireworks container -->
+	<div id="fireworks-container"></div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!-- LightGallery JS + Plugins from CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+
+	<!-- Fireworks JS -->
+	<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2/dist/index.umd.js"></script>
+
+	<script>
+		// Khởi tạo lightGallery
+		lightGallery(document.getElementById("gallery"), {
+			plugins: [lgThumbnail, lgAutoplay, lgFullscreen],
+			speed: 500,
+		});
+
+		// Hàm phát âm thanh
+		function playAudio1() {
+			const audio = new Audio("https://www.soundjay.com/buttons/button-3.mp3");
+			audio.play();
+		}
+
+		// Khởi tạo Fireworks sau khi DOM sẵn sàng
+		window.addEventListener("DOMContentLoaded", () => {
+			const container = document.getElementById("fireworks-container");
+			const fireworks = new Fireworks.default(container, {
+				hue: { min: 0, max: 360 },
+				delay: { min: 15, max: 30 },
+				speed: 2,
+				acceleration: 1.05,
+				friction: 0.97,
+				gravity: 1.5,
+				particles: 100,
+				trace: 3,
+				explosion: 5,
+				boundaries: {
+					top: 50,
+					bottom: container.clientHeight,
+					left: 50,
+					right: container.clientWidth,
+				},
+				sound: { enable: false },
+			});
+
+			// Gán sự kiện cho nút
+			document.getElementById("open-invitation").addEventListener("click", () => {
+				fireworks.start();
+				playAudio1();
+
+				// Tự động dừng pháo sau 5 giây
+				setTimeout(() => {
+					fireworks.stop();
+				}, 5000);
+			});
+		});
+	</script>
+
+
 	<script>
 		const input = document.getElementById('upload-input');
 		const gallery = document.getElementById('gallery');
 
-		input.addEventListener('change', function(event) {
+		input.addEventListener('change', function (event) {
 			const file = event.target.files[0];
 			if (!file) return;
 
 			const reader = new FileReader();
-			reader.onload = function(e) {
-			const img = document.createElement('img');
-			img.src = e.target.result;
-			img.alt = 'Ảnh mới';
-			img.style.width = '200px';
-			img.style.height = '150px';
-			img.style.objectFit = 'cover';
-			img.style.borderRadius = '10px';
-			img.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+			reader.onload = function (e) {
+				const img = document.createElement('img');
+				img.src = e.target.result;
+				img.alt = 'Ảnh mới';
+				img.style.width = '200px';
+				img.style.height = '150px';
+				img.style.objectFit = 'cover';
+				img.style.borderRadius = '10px';
+				img.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
 
-			// Thêm ảnh mới lên đầu
-			gallery.insertBefore(img, gallery.firstChild);
+				// Thêm ảnh mới lên đầu
+				gallery.insertBefore(img, gallery.firstChild);
 
-			// Giữ lại tối đa 3 ảnh hiển thị
-			while (gallery.children.length > 3) {
-				gallery.removeChild(gallery.lastChild);
-			}
+				// Giữ lại tối đa 3 ảnh hiển thị
+				while (gallery.children.length > 3) {
+					gallery.removeChild(gallery.lastChild);
+				}
 			};
 
 			reader.readAsDataURL(file);
@@ -408,7 +501,7 @@
 		}
 	</script>
 
-	
+
 
 	<script>
 		function akadLocation() {
