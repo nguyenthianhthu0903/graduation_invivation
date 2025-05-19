@@ -518,6 +518,9 @@ h1, h2, h3, h4, h5, h6, figure {
   #title-p2 {
     font-size: 19px !important;
   }
+  #letter-end {
+    font-size: 40px !important;
+  }
 }
 
 #fh5co-header {
