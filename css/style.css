@@ -129,6 +129,12 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-nav {
     padding: 20px 0;
   }
+  .none-phone{
+    display: none !important;
+  }
+  .owl-carousel.show-phone {
+    display: block !important;
+  }
 }
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
@@ -2442,4 +2448,18 @@ fadeIn {  from {
     width: 0;
     height: 0;
     border: none;
+  }
+
+  .owl-carousel .image-phone{
+    width: 200px;      
+    height: 200px;      
+    object-fit: cover; 
+    border-radius: 8px; 
+    /* display: none !important; */
+    display: block;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+  .owl-carousel.show-phone {
+    display: none;
   }
